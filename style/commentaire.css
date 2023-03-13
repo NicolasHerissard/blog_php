@@ -7,7 +7,7 @@ body {
 }
 
 .div {
-    height: auto;
+    height: 620px;
     width: auto;
     margin-top: 70px;
 }
@@ -22,4 +22,26 @@ body {
 .area {
     margin-left: 15px;
     margin-bottom: 15px;
+}
+
+.footer {
+    border: solid 2px white;
+    background: rgba(29, 27, 27, 0.911);
+    bottom: 0;
+    left: 0;
+    width: 97%;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-family: 'Signika Negative', sans-serif; 
+}
+
+#div-accueil, #div-para, #div-compte, #div-conf {
+    margin-right: 300px;
+}
+
+.div-footer {
+    margin-top: 10px;
 }

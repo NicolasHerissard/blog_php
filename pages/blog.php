@@ -40,20 +40,21 @@ if(!$_SESSION['is-connected'] = true)
                     while ($row = $query->fetch()) {
                         ?>
                             <div Align="center" class="div_article">
-                                        <a href="../pages/content.php?id_articles=<?= $row['id_articles'] ?>"><?= stripslashes($row['title']) ?></a>
-                                        <div class="div_content">
-                                            <?= $row['content'] ?>
-                                        </div>
-                                        <p>-----------------------</p>
-                                        
+
+                                    <a href="../pages/content.php?id_articles=<?= $row['id_articles'] ?>"><?= stripslashes($row['title']) ?></a>
+                                    <div class="div_content">
+                                        <?= $row['content'] ?>
                                     </div>
+                                    <p>-----------------------</p>
+                                        
+                            </div>
                         
                         <?php 
                     }
                     ?>
                 </ul>
+
                 </div>
-                    
                 
             </div>
 

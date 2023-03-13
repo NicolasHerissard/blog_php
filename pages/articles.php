@@ -14,6 +14,7 @@
     <div class="div">
 
         <form action="../authentification/createArticle.php" method="post">
+            
             <div class="button">
                     <button class="btnPub" type="submit">Publier</button>
             </div>
