@@ -1,0 +1,32 @@
+body {
+    background-color: rgb(126, 233, 224);
+}
+
+.content {
+    border-bottom: 1px solid;
+    width: 100%;
+    height: auto;
+}
+
+.comment {
+    border: 1px solid;
+    width: auto;
+    height: auto;
+    margin-top: 10px;
+}
+
+.title_comment {
+    margin-bottom: 50px;
+}
+
+#btn_ajt {
+    width: 170px;
+    height: 30px;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#btn-deco {
+    margin-top: 10px;
+    margin-left: 10px;
+}

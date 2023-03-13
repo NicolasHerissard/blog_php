@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(152, 199, 171);
+}
+
+.inscrit {
+    border: 2px solid;
+    border-radius: 25px;
+    height: 500px;
+    width: 650px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: linear-gradient(rgb(147, 209, 196), rgb(201, 155, 157));
+}
+
+form  {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    max-width: 300px;
+    margin: 0 auto;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.first {
+    margin-top: 40px;
+}
+
+#firstname {
+    border-radius: 5px;
+    border: 1px solid;
+    height: 25px;
+}
+
+.last {
+    margin-top: 40px;
+}
+
+#lastname {
+    border-radius: 5px;
+    border: 1px solid;
+    height: 25px;
+}
+
+.mail {
+    margin-top: 40px;
+}
+
+#email {
+    border-radius: 5px;
+    border: 1px solid;
+    height: 25px;
+}
+
+.pass {
+    margin-top: 40px;
+}
+
+#password {
+    border-radius: 5px;
+    border: 1px solid;
+    height: 25px;
+}
+
+.button {
+    margin-top: 40px;
+}
+
+#b {
+    height: 30px;
+    width: 150px;
+    border-radius: 15px;
+    margin-left: 70px;
+}

@@ -1,0 +1,57 @@
+body {
+    background-color: rgb(126, 233, 224);
+}
+
+header {
+    border-bottom: 1px solid;
+    text-align: center;
+    height: 150px; 
+    width: 100%;
+}
+
+#btn_valide {
+    margin-top: 10px;
+}
+
+#btn_delete {
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-bottom: 10px;
+}
+
+#btn_post {
+    margin-top: 10px;
+    margin-left: 10px;
+    border-radius: 5px;
+    height: 35px;
+}
+
+.div_center {
+    height: auto;
+    width: 100%;
+}
+
+.div_articles {
+    margin-top: 20px;
+    font-size:x-large;
+    width: auto;
+    height: 160px;
+}
+
+.div_content {
+    margin-top: 35px;
+}
+
+.footer {
+    border: solid 2px white;
+    background: rgba(29, 27, 27, 0.911);
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 30px;
+    font-family: 'Signika Negative', sans-serif; 
+}
