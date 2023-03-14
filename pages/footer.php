@@ -1,3 +1,4 @@
+<!--Pied de page du blog/article etc...-->
 <footer class="footer">
       <div class="div-footer">
             <a href="../pages/blog.php" id="div-accueil">Accueil</a>

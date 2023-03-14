@@ -7,6 +7,7 @@
     <title>Connexion</title>
     <link rel="stylesheet" href="/blog/style/connexion.css">
 </head>
+<!--Page de connexion au blog-->
 <body>
 
     <form action="register.php">

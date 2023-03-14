@@ -1,4 +1,5 @@
 <?php
+    // Connexion Mysql
     require('../authentification/connect_bdd.php'); 
 ?>
 
@@ -26,10 +27,11 @@
             </div>
                     <ul>
                         <?php 
-
+                            // traitement des données 
                             $query = $dbh->query('SELECT id_articles, title, content FROM articles ORDER BY published_at DESC');
                             $query->execute();
 
+                            // quand un article est créer il est afficher 
                             while($row = $query->fetch()) {
                                 ?>
                                     <div Align="center" class="div_articles">

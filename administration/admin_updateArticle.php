@@ -1,13 +1,17 @@
 <?php 
 
+// Connexion Mysql
 require('../authentification/connect_bdd.php');
 
+// verifie si la variable existe
 if(isset($_POST['id_articles'], $_POST['id_articles']))
 {
+    // traitement des caractères speciaux
     $titre = htmlspecialchars(addslashes($_POST['title']));
     $contenu = htmlspecialchars(addslashes($_POST['content']));
     $id = htmlspecialchars(addslashes($_POST['id_articles']));
 
+    // traitement des données 
     $query = $dbh->query('UPDATE articles SET title= :titre, content= :content WHERE id_articles = :id');
     $query->execute(array(
         ':titre' => $titre,
@@ -15,6 +19,7 @@ if(isset($_POST['id_articles'], $_POST['id_articles']))
         ':id' => $id,
     ));
 
+    // redirection 
     header('location: admin.php');
 }
 ?>
@@ -32,9 +37,14 @@ if(isset($_POST['id_articles'], $_POST['id_articles']))
 
     <?php require('header_admin.php') ?>
 
+    <form action="admin.php">   
+        <button id="btn-return" type="submit">Retour page admin</button>
+    </form>
+
     <div Align="center" class="div-text">
 
         <?php 
+            // traitement des données 
             $requete = $dbh->query('SELECT title, content FROM articles');
             $requete->execute();
             $row = $requete->fetch();

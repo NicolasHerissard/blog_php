@@ -49,13 +49,14 @@ header {
     background: rgba(29, 27, 27, 0.911);
     bottom: 0;
     left: 0;
-    width: 100%;
+    width: 97%;
     height: 40px;
     color: white;
     display: flex;
     justify-content: space-around;
     padding: 30px;
     font-family: 'Signika Negative', sans-serif; 
+    margin-top: 55px;
 }
 
 #div-accueil, #div-para, #div-compte, #div-conf {
@@ -64,6 +65,7 @@ header {
 
 .div-footer {
     margin-top: 10px;
+    margin-left: 200px;
 }
 
 /*CSS du la page ( admin_updateArticle.php )*/
@@ -90,4 +92,13 @@ header {
 .delete-art {
     font-size: 20px;
     margin-bottom: 10px;
+}
+
+#btn-update_content {
+    margin-top: 20px;
+}
+
+#btn-return {
+    margin-top: 15px;
+    margin-left: 15px;
 }

@@ -7,6 +7,7 @@
     <title>Articles</title>
     <link rel="stylesheet" href="/blog/style/articles.css">
 </head>
+<!--Page de création d'article-->
 <body>
 
     <?php require('header.php') ?>

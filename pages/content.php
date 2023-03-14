@@ -1,14 +1,19 @@
 <?php
 
+// verifie si les variables existent et si les messages sont vides 
 if(isset($_GET['id_articles']) && !empty($_GET['id_articles']))
 {
+    // Connexion Mysql
     require('../authentification/connect_bdd.php'); 
+    
+    // traitement des données 
     $sql = 'SELECT * FROM articles WHERE id_articles =' . $_GET['id_articles'];
     $query = $dbh->prepare($sql);
     $query = $dbh->query($sql);
     $article = $query->fetch();
     if($query->rowCount() == 0) 
     {
+        // redirection
         header('location: blog.php');   
     }
 }
@@ -28,6 +33,7 @@ else
     <title><?= stripslashes($article['title']) ?></title>
     <link rel="stylesheet" href="../style/content.css">
 </head>
+<!--Page d'affichage de l'article et son contenu avec les commentaires-->
 <body>
 
     <?php require('header.php') ?>

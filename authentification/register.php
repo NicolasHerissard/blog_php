@@ -23,7 +23,7 @@ if(isset($_POST['firstname'], $_POST['lastname'], $_POST['email'],$_POST['passwo
     header('location: /blog/pages/login.php');
 } else {
     
-// sinon renvoyer ce message et redirige a la page initial
+// sinon renvoyer ce message et redirige a la page du blog
     header('location: /blog/pages/register.php');
     echo 'Veuillez remplir tout les champs';
 }

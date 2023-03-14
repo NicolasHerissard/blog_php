@@ -1,3 +1,4 @@
+<!--En tête de la page admin-->
 <header>
         <div>
             <h1>Panneau administration</h1>

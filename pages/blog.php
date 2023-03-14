@@ -16,6 +16,7 @@ if(!$_SESSION['is-connected'] = true)
     <link rel="stylesheet" href="../style/blog.css">
 
 </head>
+<!--Page du blog si l'utilisateur est connecté-->
 <body>
     
         <?php require('header.php') ?>        

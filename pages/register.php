@@ -7,6 +7,7 @@
     <title>Inscription</title>
     <link rel="stylesheet" href="/blog/style/inscription.css">
 </head>
+<!--Page d'inscription au blog-->
 <body>
 
     <div class="inscrit">

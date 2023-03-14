@@ -7,6 +7,7 @@
     <title>Commentaire</title>
     <link rel="stylesheet" href="/blog/style/commentaire.css">
 </head>
+<!--Page de création de commentaire sur un article-->
 <body>
 
     <?php require('header.php') ?>

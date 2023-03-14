@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../style/blog_NonConnecter.css">
 
 </head>
+<!--Page du blog si l'utilisateur n'est pas connecté-->
 <body>
     
         <div class="en-tete">

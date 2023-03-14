@@ -1,3 +1,4 @@
+<!--En tête du blog/article etc...-->
 <link rel="stylesheet" href="../style/header.css">
 
 <div class="en-tete">
