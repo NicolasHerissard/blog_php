@@ -4,7 +4,7 @@
 require('../authentification/connect_bdd.php');
 
 // verifie si la variable existe
-if(isset($_POST['id_articles'], $_POST['id_articles']))
+if(isset($_POST['title'], $_POST['content']) && empty($_POST['title']) && empty($_POST['content']))
 {
     // traitement des caractères speciaux
     $titre = htmlspecialchars(addslashes($_POST['title']));
@@ -13,11 +13,11 @@ if(isset($_POST['id_articles'], $_POST['id_articles']))
 
     // traitement des données 
     $query = $dbh->query('UPDATE articles SET title= :titre, content= :content WHERE id_articles = :id');
-    $query->execute(array(
-        ':titre' => $titre,
-        ':content' => $contenu,
-        ':id' => $id,
-    ));
+    $query->execute([
+        $titre,
+        $contenu,
+        $id,
+    ]);
 
     // redirection 
     header('location: admin.php');
@@ -50,14 +50,14 @@ if(isset($_POST['id_articles'], $_POST['id_articles']))
             $row = $requete->fetch();
         ?>
 
-        <form action="admin.php">
+        <form method="post">
 
             <div class="div-title">
-                <textarea name="title" id="txt-title" cols="30" rows="2"><?= $row['title']?></textarea>
+                <textarea name="title" id="txt-title" cols="30" rows="2"></textarea>
             </div>
 
             <div class="div-content">
-                <textarea name="content" id="txt-content" cols="60" rows="30"><?= $row['content'] ?></textarea>
+                <textarea name="content" id="txt-content" cols="60" rows="30"></textarea>
             </div>
 
             <button id="btn-update_content">Modifier</button>

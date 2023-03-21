@@ -1,6 +1,7 @@
 <?php
     // Connexion Mysql
-    require('../authentification/connect_bdd.php'); 
+    require('../authentification/connect_bdd.php');
+    require('delete_article.php');
 ?>
 
 <!DOCTYPE html>
@@ -11,6 +12,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration</title>
     <link rel="stylesheet" href="../style/admin_panel.css">
+
 </head>
 <body>
 
@@ -39,8 +41,9 @@
                                         <div class="div_content">
                                             <?= $row['content'] ?>
                                         </div>
-                                        <form action="delete_article.php">
-                                            <a href="" class="delete-art">Supprimer</a>
+                                        <form method="post">
+                                            <input type="text" name="id_articles" value="<?= $row['id_articles'] ?>" hidden>
+                                            <button type="submit" name="delete" class="delete-art">Supprimer</button>
                                         </form>
 
                                         <form action="admin_updateArticle.php">
