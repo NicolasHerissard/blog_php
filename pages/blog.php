@@ -19,7 +19,7 @@ if(!$_SESSION['is-connected'] = true)
 <!--Page du blog si l'utilisateur est connecté-->
 <body>
     
-        <?php require('header.php') ?>
+        <?php require('header.php') ?>        
 
         <div class="middle">
         

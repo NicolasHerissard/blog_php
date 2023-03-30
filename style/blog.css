@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(126, 233, 224);
+    background-color: #a6be99;
 }
 
 .en-tete {
@@ -65,9 +65,13 @@ body {
 
 .btnP {
     border-radius: 5px;
+    border: none;
     height: 35px;
     margin-top: 10px;
     margin-left: 20px;
+    cursor: pointer;
+    background-color: rgb(96, 0, 185);
+    color: white;
 }
 
 .div_article {

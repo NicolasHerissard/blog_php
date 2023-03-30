@@ -4,7 +4,7 @@
 require('../authentification/connect_bdd.php');
 
 // verifie si la variable existe
-if(isset($_POST['title'], $_POST['content']) && empty($_POST['title']) && empty($_POST['content']))
+if(isset($_POST['update']))
 {
     // traitement des caractères speciaux
     $titre = htmlspecialchars(addslashes($_POST['title']));
@@ -12,12 +12,8 @@ if(isset($_POST['title'], $_POST['content']) && empty($_POST['title']) && empty(
     $id = htmlspecialchars(addslashes($_POST['id_articles']));
 
     // traitement des données 
-    $query = $dbh->query('UPDATE articles SET title= :titre, content= :content WHERE id_articles = :id');
-    $query->execute([
-        $titre,
-        $contenu,
-        $id,
-    ]);
+    $query = $dbh->query("UPDATE articles SET title= " . $titre ", content= " . $contenu " WHERE id_articles =" . $id);
+    $query->execute();
 
     // redirection 
     header('location: admin.php');
@@ -43,14 +39,7 @@ if(isset($_POST['title'], $_POST['content']) && empty($_POST['title']) && empty(
 
     <div Align="center" class="div-text">
 
-        <?php 
-            // traitement des données 
-            $requete = $dbh->query('SELECT title, content FROM articles');
-            $requete->execute();
-            $row = $requete->fetch();
-        ?>
-
-        <form method="post">
+        <form name="update">
 
             <div class="div-title">
                 <textarea name="title" id="txt-title" cols="30" rows="2"></textarea>

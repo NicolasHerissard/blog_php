@@ -72,9 +72,11 @@ form  {
     margin-top: 40px;
 }
 
-#b {
+#btn-register {
     height: 30px;
     width: 150px;
-    border-radius: 15px;
+    border-radius: 5px;
+    border: none;
     margin-left: 70px;
+    cursor: pointer;
 }

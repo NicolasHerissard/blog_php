@@ -1,9 +1,8 @@
 body {
-    background-color: rgb(126, 233, 224);
+    background-color: #a6be99;
 }
 
 .div {
-    border: 2px solid;
     border-radius: 25px;
     height: 590px;
     width: 650px;
@@ -12,7 +11,6 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -35%);
-    background: linear-gradient(rgb(147, 209, 196), rgb(160, 111, 113));
 }
 
 .area {
@@ -30,6 +28,8 @@ body {
     height: 30px;
     width: 80px;
     border-radius: 5px;
+    background-color: rgb(27, 139, 214);
+    color: white;
 }
 
 .title {

@@ -1,6 +1,6 @@
 <?php
     // Connexion Mysql
-    require('../authentification/connect_bdd.php');
+    require('../authentification/connect_bdd.php'); 
     require('delete_article.php');
 ?>
 
@@ -12,7 +12,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Administration</title>
     <link rel="stylesheet" href="../style/admin_panel.css">
-
 </head>
 <body>
 
@@ -30,7 +29,7 @@
                     <ul>
                         <?php 
                             // traitement des données 
-                            $query = $dbh->query('SELECT id_articles, title, content FROM articles ORDER BY published_at DESC');
+                            $query = $dbh->prepare('SELECT id_articles, title, content FROM articles ORDER BY published_at DESC');
                             $query->execute();
 
                             // quand un article est créer il est afficher 
@@ -46,7 +45,7 @@
                                             <button type="submit" name="delete" class="delete-art">Supprimer</button>
                                         </form>
 
-                                        <form action="admin_updateArticle.php">
+                                        <form method="post">
                                             <a href="admin_updateArticle.php?id_articles=<?= $row['id_articles'] ?>" class="update-art">Modifier</a>
                                         </form>
                                         

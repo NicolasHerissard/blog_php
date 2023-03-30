@@ -6,9 +6,8 @@ require('../authentification/connect_bdd.php');
 // verifie si la variable existe
 if(isset($_POST['delete']))
 {
-
     // traitement des données 
-    $query = $dbh->query('DELETE FROM articles WHERE id_articles = ' . $_POST['id_articles']);
+    $query = $dbh->prepare("DELETE FROM articles WHERE id_articles = " . $_POST['id_articles']);
     $query->execute();
     
     // redirection 

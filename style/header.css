@@ -1,4 +1,13 @@
 .en-tete {
     height: 150px;
     border-bottom: 1px solid;
+    background-color: #c9b093;
+}
+
+#btnd {
+    width: 100px;
+    height: 30px;
+    background-color: rgb(253, 83, 83);
+    border: none;
+    cursor: pointer;
 }

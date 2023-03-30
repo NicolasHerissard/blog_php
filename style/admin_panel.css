@@ -1,7 +1,7 @@
 /*CSS de la page ( admin.php )*/
 
 body {
-    background-color: rgb(126, 233, 224);
+    background-color: #a6be99;
 }
 
 header {
@@ -9,6 +9,7 @@ header {
     text-align: center;
     height: 150px; 
     width: 100%;
+    background-color: #c9b093;
 }
 
 #btn_valide {
@@ -22,10 +23,14 @@ header {
 }
 
 #btn_post {
-    margin-top: 10px;
-    margin-left: 10px;
     border-radius: 5px;
+    border: none;
     height: 35px;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: rgb(96, 0, 185);
+    color: white;
 }
 
 .div_center {
@@ -90,8 +95,7 @@ header {
 }
 
 .delete-art {
-    margin-top: 10px;
-    font-size: 15px;
+    font-size: 20px;
     margin-bottom: 10px;
 }
 

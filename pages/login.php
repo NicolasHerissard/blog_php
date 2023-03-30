@@ -17,7 +17,7 @@
         <form action="blog_NonConnecter.php">
             <button id="btn_blog" type="submit">Acceder au blog</button>
         </form>
-
+        
             <div class="connect">
                 <h1 class="text-center">Connexion</h1>
                 
@@ -34,17 +34,12 @@
                             </div>
 
                                 <div class="sub">
-                                    <button id="button" type="submit">Se connecter</button>
+                                    <button id="btn-connect" type="submit">Se connecter</button>
                                 </div>
+                        
 
                     </form>
             </div>
-
-            <form action="../administration/admin.php">
-                <div Align="" class="p-admin">
-                    <button id="btn-admin" type="submit">Menu Administration</button>
-                </div>
-            </form>
 
 <?php
 session_start();

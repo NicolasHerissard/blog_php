@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(126, 233, 224);
+    background-color: #a6be99;
 }
 
 .text_comment {
@@ -13,10 +13,14 @@ body {
 }
 
 .btn_comment {
-    margin-top: 15px;
-    margin-left: 15px;
+    border-radius: 5px;
+    border: none;
     height: 35px;
-    width: 145px;
+    margin-top: 10px;
+    margin-left: 20px;
+    cursor: pointer;
+    background-color: rgb(96, 0, 185);
+    color: white;
 }
 
 .area {

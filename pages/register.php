@@ -32,7 +32,7 @@
                     <input id="password" type="password" name="password">
                 </div>
                 <div class="content button">
-                    <button id="b" type="submit">S'inscrire</button>
+                    <button id="btn-register" type="submit">S'inscrire</button>
                 </div>
                 
                 <a href="login.php">Je possède déjà un compte</a>
